@@ -11,6 +11,9 @@ datagroup: subhash_csv_model_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "5 hour"
 }
+persist_with: subhash_csv_model_default_datagroup
+explore: subhash_view_a {}
+
 # explore: order_items {
 #   join: orders {
 #     relationship: many_to_one
