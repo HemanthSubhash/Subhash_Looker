@@ -7,6 +7,10 @@ connection: "snowflake"
 # # Select the views that should be a part of this model,
 # # and define the joins that connect them together.
 #
+datagroup: subhash_csv_model_default_datagroup {
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "5 hour"
+}
 # explore: order_items {
 #   join: orders {
 #     relationship: many_to_one
